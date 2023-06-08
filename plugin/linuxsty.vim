@@ -77,6 +77,9 @@ function s:LinuxKeywords()
 endfunction
 
 function s:LinuxHighlighting()
+    set colorcolumn=80
+    highlight ColorColumn ctermbg=8
+
     highlight default link LinuxError ErrorMsg
 
     syn match LinuxError / \+\ze\t/     " spaces before tab
