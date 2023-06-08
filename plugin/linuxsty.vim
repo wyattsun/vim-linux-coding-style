@@ -83,7 +83,7 @@ function s:LinuxHighlighting()
     highlight default link LinuxError ErrorMsg
 
     syn match LinuxError / \+\ze\t/     " spaces before tab
-    syn match LinuxError /\%>80v[^()\{\}\[\]<>]\+/ " virtual column 81 and more
+    syn match LinuxError /\%>80v.\+/ " virtual column 81 and more
     syn match LinuxError /^ [^*]\+/  " only allow space at the begining of line following by * for comment blocks
 
     " Highlight trailing whitespace, unless we're in insert mode and the
